@@ -571,9 +571,8 @@
 	<3 RK_PA1 1 &pcfg_pull_up_drv_level_6>;
 };
 
-&gpu {
+&gpu_panthor {
 	mali-supply = <&vdd_gpu_s0>;
-	mem-supply = <&vdd_gpu_mem_s0>;
 	status = "okay";
 };
 

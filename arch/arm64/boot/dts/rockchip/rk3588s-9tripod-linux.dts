@@ -470,9 +470,8 @@
 	pinctrl-0 = <&lcd_rst_gpio>;
 };
 
-&gpu {
+&gpu_panthor {
 	mali-supply = <&vdd_gpu_s0>;
-	mem-supply = <&vdd_gpu_mem_s0>;
 	status = "okay";
 };
 
