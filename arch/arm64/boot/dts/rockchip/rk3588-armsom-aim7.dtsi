@@ -42,9 +42,8 @@
 	mem-supply = <&vdd_cpu_big1_mem_s0>;
 };
 
-&gpu {
+&gpu_panthor {
 	mali-supply = <&vdd_gpu_s0>;
-	mem-supply = <&vdd_gpu_mem_s0>;
 	status = "okay";
 };
 

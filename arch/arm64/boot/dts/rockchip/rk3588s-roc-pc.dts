@@ -363,10 +363,9 @@
 	phy-handle = <&rgmii_phy1>;
 };
 
-&gpu {
+&gpu_panthor {
 	status = "okay";
 	mali-supply = <&vdd_gpu_s0>;
-	mem-supply = <&vdd_gpu_mem_s0>;
 };
 
 /* hdmi0 */
