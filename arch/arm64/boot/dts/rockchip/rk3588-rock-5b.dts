@@ -231,8 +231,15 @@
 	fan0: pwm-fan {
 		compatible = "pwm-fan";
 		#cooling-cells = <2>;
-		cooling-levels = <72 94 117 139 162 184 207 229 255>;
+		cooling-levels = <64 96 128 144 224 255>;
 		pwms = <&pwm1 0 10000 0>;
+		rockchip,temp-trips = <
+			40000	1
+			50000	2
+			60000	3
+			70000	4
+			80000	5
+		>;
 	};
 };
 

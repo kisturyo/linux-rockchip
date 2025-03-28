@@ -46,6 +46,12 @@
 		#cooling-cells = <2>;
 		cooling-levels = <0 64 128 192 255>;
 		pwms = <&pwm14 0 10000 0>;
+		rockchip,temp-trips = <
+			50000	1
+			60000	2
+			70000	3
+			80000	4
+		>;
 	};
 
 	vcc12v_dcin: vcc12v-dcin {

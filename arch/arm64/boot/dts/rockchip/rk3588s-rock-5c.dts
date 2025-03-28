@@ -28,8 +28,13 @@
 	fan0: pwm-fan {
 		compatible = "pwm-fan";
 		#cooling-cells = <2>;
-		cooling-levels = <0 64 128 192 255>;
+		cooling-levels = <64 128 192 255>;
 		pwms = <&pwm3 0 10000 0>;
+		rockchip,temp-trips = <
+			55000	1
+			65000	2
+			75000	3
+		>;
 	};
 
 	vcc5v0_sys: vcc5v0-sys {
